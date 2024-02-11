@@ -36,15 +36,7 @@ class UserManager extends Manager
      */
     public function getByEmail($email)
     {
-        try {
-            return $this->request('GET', '/api/application/users?filter[email]='.$email);
-        } catch(PterodactylRequestException $exception) {
-            if(strstr($exception->getMessage(), 'NotFoundHttpException') !== false) {
-                return false;
-            }
-
-            throw $exception;
-        }
+        return $this->request('GET', '/api/application/users?filter[email]='.$email);
     }
 
     /**
