@@ -25,6 +25,29 @@ class UserManager extends Manager
     }
 
     /**
+     * Get a users object by email.
+     *
+     * @param string $email
+     *
+     * @return User|false
+     *
+     * @throws GuzzleException
+     * @throws PterodactylRequestException
+     */
+    public function getByEmail($email)
+    {
+        try {
+            return $this->request('GET', '/api/application/users?filter[email]='.$email);
+        } catch(PterodactylRequestException $exception) {
+            if(strstr($exception->getMessage(), 'NotFoundHttpException') !== false) {
+                return false;
+            }
+
+            throw $exception;
+        }
+    }
+
+    /**
      * Get a single user object.
      *
      * @param int $user_id
