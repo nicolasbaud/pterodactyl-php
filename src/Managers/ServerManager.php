@@ -1,12 +1,12 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Managers;
+namespace Osiom\Pterodactyl\Managers;
 
 use GuzzleHttp\Exception\GuzzleException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
-use VizuaaLOG\Pterodactyl\Resources\Server;
-use VizuaaLOG\Pterodactyl\Resources\ServerDatabase;
-use VizuaaLOG\Pterodactyl\Resources\Stats;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Resources\Server;
+use Osiom\Pterodactyl\Resources\ServerDatabase;
+use Osiom\Pterodactyl\Resources\Stats;
 
 class ServerManager extends Manager
 {
