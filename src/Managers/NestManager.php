@@ -1,11 +1,11 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Managers;
+namespace Osiom\Pterodactyl\Managers;
 
 use GuzzleHttp\Exception\GuzzleException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
-use VizuaaLOG\Pterodactyl\Resources\Egg;
-use VizuaaLOG\Pterodactyl\Resources\Nest;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Resources\Egg;
+use Osiom\Pterodactyl\Resources\Nest;
 
 class NestManager extends Manager
 {
