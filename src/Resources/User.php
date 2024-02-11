@@ -1,9 +1,9 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Resources;
+namespace Osiom\Pterodactyl\Resources;
 
 use GuzzleHttp\Exception\GuzzleException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
 
 class User extends Resource
 {
