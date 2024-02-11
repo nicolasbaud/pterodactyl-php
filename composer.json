@@ -1,5 +1,6 @@
 {
     "name": "nicolasbaud/pterodactyl-php",
+    "version": "1.0",
     "license": "MIT",
     "description": "An unofficial PHP API client for the Pterodactyl game panel.",
     "type": "library",
