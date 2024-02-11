@@ -1,10 +1,10 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Resources;
+namespace Osiom\Pterodactyl\Resources;
 
 use GuzzleHttp\Exception\GuzzleException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
-use VizuaaLOG\Pterodactyl\Managers\ServerManager;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Managers\ServerManager;
 
 class Location extends Resource
 {
