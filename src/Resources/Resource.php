@@ -1,8 +1,8 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Resources;
+namespace Osiom\Pterodactyl\Resources;
 
-use VizuaaLOG\Pterodactyl\Pterodactyl;
+use Osiom\Pterodactyl\Pterodactyl;
 
 class Resource
 {
