@@ -1,6 +1,6 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Resources;
+namespace Osiom\Pterodactyl\Resources;
 
 class ServerDatabase extends Resource
 {
