@@ -1,15 +1,15 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl;
+namespace Osiom\Pterodactyl;
 
 use GuzzleHttp\Client;
-use VizuaaLOG\Pterodactyl\Managers\LocationManager;
-use VizuaaLOG\Pterodactyl\Managers\NestManager;
-use VizuaaLOG\Pterodactyl\Managers\NodeManager;
-use VizuaaLOG\Pterodactyl\Managers\ServerManager;
-use VizuaaLOG\Pterodactyl\Exceptions\InvalidApiKeyException;
-use VizuaaLOG\Pterodactyl\Exceptions\InvalidBaseUriException;
-use VizuaaLOG\Pterodactyl\Managers\UserManager;
+use Osiom\Pterodactyl\Managers\LocationManager;
+use Osiom\Pterodactyl\Managers\NestManager;
+use Osiom\Pterodactyl\Managers\NodeManager;
+use Osiom\Pterodactyl\Managers\ServerManager;
+use Osiom\Pterodactyl\Exceptions\InvalidApiKeyException;
+use Osiom\Pterodactyl\Exceptions\InvalidBaseUriException;
+use Osiom\Pterodactyl\Managers\UserManager;
 
 class Pterodactyl
 {
