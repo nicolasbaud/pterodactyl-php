@@ -1,16 +1,16 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Managers;
+namespace Osiom\Pterodactyl\Managers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use VizuaaLOG\Pterodactyl\Pterodactyl;
+use Osiom\Pterodactyl\Pterodactyl;
 use GuzzleHttp\Exception\ServerException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\BadResponseException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
-use VizuaaLOG\Pterodactyl\Resources\Server;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Resources\Server;
 
 class Manager
 {
