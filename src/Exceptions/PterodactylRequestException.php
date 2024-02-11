@@ -1,6 +1,6 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Exceptions;
+namespace Osiom\Pterodactyl\Exceptions;
 
 class PterodactylRequestException extends \Exception
 {
