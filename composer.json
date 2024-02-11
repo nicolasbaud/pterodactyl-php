@@ -1,25 +1,22 @@
 {
-    "name": "vizuaalog/pterodactyl-php",
+    "name": "nicolasbaud/pterodactyl-php",
     "license": "MIT",
     "description": "An unofficial PHP API client for the Pterodactyl game panel.",
     "type": "library",
     "authors": [
         {
-            "name": "Thomas Erbe",
-            "email": "vizuaalog@gmail.com"
+            "name": "Nicolas BAUD",
+            "email": "nicolas.baud@osiom.fr"
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "*",
         "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "VizuaaLOG\\Pterodactyl\\": "src/"
+            "Osiom\\Pterodactyl\\": "src/"
         },
         "files": ["src/helpers.php"]
-    },
-    "require-dev": {
-        "larapack/dd": "1.*"
     }
 }
