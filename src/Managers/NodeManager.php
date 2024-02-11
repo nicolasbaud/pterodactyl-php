@@ -1,11 +1,11 @@
 <?php
 
-namespace VizuaaLOG\Pterodactyl\Managers;
+namespace Osiom\Pterodactyl\Managers;
 
 use GuzzleHttp\Exception\GuzzleException;
-use VizuaaLOG\Pterodactyl\Exceptions\PterodactylRequestException;
-use VizuaaLOG\Pterodactyl\Resources\Allocation;
-use VizuaaLOG\Pterodactyl\Resources\Node;
+use Osiom\Pterodactyl\Exceptions\PterodactylRequestException;
+use Osiom\Pterodactyl\Resources\Allocation;
+use Osiom\Pterodactyl\Resources\Node;
 
 class NodeManager extends Manager
 {
