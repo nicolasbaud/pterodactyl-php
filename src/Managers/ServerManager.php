@@ -110,6 +110,38 @@ class ServerManager extends Manager
     }
 
     /**
+     * Pull file to a server
+     *
+     * @param int $server_id
+     * @param array $values
+     *
+     * @return Server
+     *
+     * @throws GuzzleException
+     * @throws PterodactylRequestException
+     */
+    public function pull($server_id, $values)
+    {
+        return $this->request('POST', '/api/client/servers/' . $server_id . '/files/pull', $values);
+    }
+
+    /**
+     * Decompress file to a server
+     *
+     * @param int $server_id
+     * @param array $values
+     *
+     * @return Server
+     *
+     * @throws GuzzleException
+     * @throws PterodactylRequestException
+     */
+    public function decompress($server_id, $values)
+    {
+        return $this->request('POST', '/api/client/servers/' . $server_id . '/files/decompress', $values);
+    }
+
+    /**
      * Update a server's build configuration
      *
      * @param int $server_id
