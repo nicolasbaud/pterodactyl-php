@@ -33,6 +33,50 @@ class Server extends Resource
     }
 
     /**
+     * Pull file on server
+     *
+     * @param array $values
+     *
+     * @return Server
+     *
+     * @throws GuzzleException
+     * @throws PterodactylRequestException
+     */
+    public function pull($values)
+    {
+        $base = [
+            'url' => null,
+            'directory' => null,
+        ];
+
+        $this->fill($this->pterodactyl->servers->pull($this->id, array_merge_recursive_distinct($base, $values)));
+
+        return $this;
+    }
+
+    /**
+     * Decompress file on server
+     *
+     * @param array $values
+     *
+     * @return Server
+     *
+     * @throws GuzzleException
+     * @throws PterodactylRequestException
+     */
+    public function decompress($values)
+    {
+        $base = [
+            'root' => null,
+            'file' => null,
+        ];
+
+        $this->fill($this->pterodactyl->servers->decompress($this->id, array_merge_recursive_distinct($base, $values)));
+
+        return $this;
+    }
+
+    /**
      * Update an existing server's build configuration
      *
      * @param array $values
